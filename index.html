@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Personal Site</title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css'>
@@ -18,41 +18,6 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!--
-For best view switch to full view.
-
-NOTE: For some reason the client section is not loading but does work on the live demo on my website and download version
-
-This is a portfolio I decided to create for people to show off their work. This portfolio includes a working ajax form.  For some reason, I can't get font awesome to show up and will try to get that fix.  As of right now, the ajax will not work in codepen. 
-
-Also if feel free to rename it to whatever you want.
-
-To download this portfolio for free or pay what you want by making a small donation using paypal please visit my website,
-http://www.bricho.com/reviews/brian.html
-
-Features
--working ajax form
--sass files when downloaded on the website
--takes advantage of sass variable for easier customization
--Readme files and commented for easy customization
-
-Sources
--Scroll Magic
--Magnific-Popup
--Owl Carousel 2
--Font Awesome
--Flex Box Grid
-
-Images
--Unsplash - pics will be replace with image holder if download on site but can easily be found on unsplash.com
-
-License
--Footer with credit must remain on.  If you really want the footer off then please contact me on my website about making a small donation and I will allow the footer to come off.  If you are taking it for free then please keep the footer with credit on.
-
-For best view switch to full view.
-
--->
 
 <body>
     
@@ -94,16 +59,15 @@ For best view switch to full view.
     
 <!--------------------------------------HERO IMAGE-------------------------------------->
 
-<<section id="hero">
-    <div id="particles-js">
-        <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
-            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                <div class="hero-content">
-                    <img src="http://www.bricho.com/demo/brian/with-particles/img/profile-pic2.jpeg">
-                    <h1>Ciao, sono Francesco</h1>
-                    <h2 id="hero-text-animation">Principiantissimo Software Developer</h2>
-                    <button class="download"><a download href="downloads/exampleCV.txt">Scarica CV</a></button><!--To add your file simply replace example.txt with whatever file you want-->
-                </div>
+<section id="hero">
+    <canvas id="canvas"></canvas>
+    <div id="particles-js"></div>
+    <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div class="hero-content">
+                <h1>Ciao, sono Francesco</h1>
+                <h2 id="hero-text-animation">Principiantissimo Software Developer</h2>
+                <button class="download"><a download href="downloads/exampleCV.txt">Scarica CV</a></button>
             </div>
         </div>
     </div>
@@ -116,7 +80,7 @@ For best view switch to full view.
         <div class="row left-xs left-sm left-md left-lg">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="about-text">
-                    <h2>Ciao, sono<span class="accent-text">Francesco</span></h2>
+                    <h2>Ciao, sono <span class="accent-text"> Francesco</span></h2>
                     <p>Ciao sono Francesco fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam Fusce Fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam Fusce Fusce quis volutpat porta, ut tincidunt eros est nec diam erat quis volutpat porta, neque massa, ut tincidunt eros est nec diam Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
                     <ul class="about-social">
@@ -127,7 +91,8 @@ For best view switch to full view.
                         <li><a href="http://www.google.com"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="http://www.google.com"><i class="far fa-envelope"></i></a></li>
                         <li><a href="http://www.google.com"><i class="fab fa-google-plus-g"></i></a></li>
-                        <li><a href="http://www.google.com"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://github.com/ThMavko"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -180,7 +145,7 @@ For best view switch to full view.
 <section id="services">
     <div class="container">
         <div class="section-title">
-            <h1>I miei<span class="accent-text">Servizi</span></h1>
+            <h1>I miei <span class="accent-text"> Servizi</span></h1>
         </div>
         
         <div class="row center-xs center-sm center-md center-lg trigger"><!--Row 1-->
@@ -451,7 +416,8 @@ For best view switch to full view.
 <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js'></script><script  src="./script.js"></script>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js'></script>
+<script src="./script.js"></script>
+<script src="heart-canvas.js"></script>
 </body>
 </html>

@@ -187,7 +187,7 @@ a {
   width: 100%;
   padding: 20px 0 10px 0;
   z-index: 900;
-  background: #fff;
+  background: #de9dee;
   border-bottom: 1px #7544fc solid;
   overflow: hidden; }
   @media screen and (max-width: 760px) {
@@ -285,6 +285,33 @@ a {
 
 /***********************************HERO STYLES***********************************/
 #hero {
+  position: relative;
+  overflow: hidden;
+}
+
+#canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Sfondo: cuore */
+  pointer-events: none;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1; /* Sopra il cuore */
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Sopra tutto */
+}
+  #hero {
   background: url("http://www.bricho.com/demo/brian/with-particles/img/hero8.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
@@ -663,4 +690,12 @@ footer {
 .link-header a{
   color: #fff;
   
+}
+
+#particles-js, #canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
